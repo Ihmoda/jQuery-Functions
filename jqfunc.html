@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+
+    $(document).ready(function(){
+
+        $("#clicktest").click(function(){
+            alert("The click event '.click' allows you to call functions when items are clicked")
+        });
+
+        $("#hidetest").click(function(){
+            $("#hound").hide("slow");
+        });
+
+        $("#showtest").click(function(){
+            $("#mountain").show("slow");
+        });
+
+        $("#toggletest").click(function(){
+            $(".togglepics").toggle("slow");
+        });
+
+        $("#slidedowntest").click(function(){
+            $("#Arya").slideDown("slow");
+        });
+
+        $("#slideuptest").click(function(){
+            $("#Cersai").slideUp("slow");
+        });
+
+        $("#slidetoggletest").click(function(){
+            $("#slidetogglepic").slideToggle("slow");
+        });
+        
+        $("#fadeintest").click(function(){
+            $("#fadeinpic").fadeIn("slow");
+        });
+
+        $("#fadeouttest").click(function(){
+            $("#fadeoutpic").fadeOut("slow");
+        });
+
+        $("#addclasstest").click(function(){
+            $("#death").addClass("blue");
+        });
+
+        $("#removeclasstest").click(function(){
+            $("#game").removeClass("blue");
+        });
+
+        $("#beforetest").click(function(){
+            $("#cripples").before("<h2>Tyrion Lannister</h2");
+        });
+
+        $("#aftertest").click(function(){
+            $("#wheel").after("<h3>--Danaerys Targarayean</h3>");
+        });
+
+        
+        $("#appendtest").click(function(){
+            $("#death2").append("<p> Not Today! </p");
+        });
+
+        $("#HTMLtest").click(function(){
+           var HTMLstring = $(this).html();
+           $(this).text(HTMLstring);
+        });
+
+        $("#checktime").change(function(){
+           var checkval = $(this).attr("checked");
+           $("#checkstatus").append(checkval);
+        });
+
+        $("#valtest").change(function(){
+           var val = $(this).val();
+           $("#checkstatus2").text("Value: " + val);
+        });
+
+
+
+    });
+    
+    
+    </script>
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <h1>Game of jQuery</h1>
+
+        <div class="example examplefirst">
+            <h2>---Click---</h2>
+            <div class="try">
+                <button id="clicktest">Click Me!</button>
+                <p>Click the button to the left to bring up an alert. This demonstrates the click event!</p>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Hide---</h2>
+            <div class="try">
+                <button id="hidetest">Click Me!</button>
+                <p>Click the button to the left to hide the picture of the book below!</p>
+                <br>
+                <img id="hound" src="https://i.ytimg.com/vi/ClQIaioX5ZI/maxresdefault.jpg" alt="The Hound.png">
+            </div>
+        </div>
+
+
+        <div class="example">
+                <h2>---Show---</h2>
+                <div class="try">
+                    <button id="showtest">Click Me!</button>
+                    <p>Click the button to the left to hide the picture of the book below!</p>
+                    <br>
+                    <img id="mountain" src="http://static1.businessinsider.com/image/537cf6cfecad04b60957d10e-1200-600/the-mountain-game-of-thrones-season-1.png" alt="The Hound.png">
+                </div>
+        </div>
+
+        <div class="example">
+                <h2>---Toggle---</h2>
+                <div class="try">
+                    <button id="toggletest">Click Me!</button>
+                    <p>Click the button to the left to toggle between the pictures below!</p>
+                    <br>
+                    <img class="togglepics" id="tyrion" src="http://www.purefilmcreative.com/wp-content/uploads/2011/08/Game-of-Thrones-Tyrion-Lannister-1.jpg" alt="Tyrion Lannister.png">
+                    <img class="togglepics" id="jamie" src="https://upload.wikimedia.org/wikipedia/en/b/b4/Jaime_Lannister-Nikolaj_Coster-Waldau.jpg" alt="Jamie Lannister.png">
+                </div>
+        </div>
+
+        <div class="example">
+                <h2>---Slide Down---</h2>
+                <div class="try">
+                    <button id="slidedowntest">Click Me!</button>
+                    <p>Click the button to the left to toggle between the pictures below!</p>
+                    <br>
+                    <div id="Arya">
+                        <p>Valar Morghullis</p>
+                        <br>
+                        <p>All men must die</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="example">
+                <h2>---Slide Up---</h2>
+                <div class="try">
+                    <button id="slideuptest">Click Me!</button>
+                    <p>Click the button to the left to toggle between the pictures below!</p>
+                    <br>
+                    <div id="Cersai">
+                        <p>When you play the game of thrones you win or you die.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="example">
+                <h2>---Slide Toggle---</h2>
+                <div class="try">
+                    <button id="slidetoggletest">Click Me!</button>
+                    <p>Click the button to the left to toggle between the pictures below!</p>
+                    <br>
+                    <img id="slidetogglepic" src="http://awoiaf.westeros.org/images/thumb/e/e1/Jon_HBO.jpg/350px-Jon_HBO.jpg" alt="Jamie Lannister.png">
+                </div>
+        </div>
+
+        <div class="example">
+            <h2>---FadeIn---</h2>
+            <div class="try">
+                <button id="fadeintest">Click Me!</button>
+                <p>Click the button to the left to toggle between the pictures below!</p>
+                <br>
+                <img id="fadeinpic" src="https://i.ytimg.com/vi/bKbQ6iAB_mw/maxresdefault.jpg" alt="Stannis Baratheon.png">
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---FadeOut---</h2>
+            <div class="try">
+                <button id="fadeouttest">Click Me!</button>
+                <p>Click the button to the left to toggle between the pictures below!</p>
+                <br>
+                <img id="fadeoutpic" src="http://vignette3.wikia.nocookie.net/gameofthrones/images/3/3d/Renly_profile.jpg/revision/latest?cb=20130116113034" alt="Stannis Baratheon.png">
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Add Class---</h2>
+            <div class="try">
+                <button id="addclasstest">Click Me!</button>
+                <p>Click the button to the left to to add the "blue" class to the text below.</p>
+                <br>
+                <p id="death">What do we say to the god of death?</p> 
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Remove Class---</h2>
+            <div class="try">
+                <button id="removeclasstest">Click Me!</button>
+                <p>Click the button to the left to to add the "blue" class to the text below.</p>
+                <br>
+                <p id="game" class="blue">Your in the great game now, and the great game is terrifying.</p> 
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Before---</h2>
+            <div class="try">
+                <button id="beforetest">Click Me!</button>
+                <p>Click this to add text Before the paragraph below</p>
+                <br>
+                <p id="cripples">All cripples are bastards in their parents eyes.</p> 
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---After---</h2>
+            <div class="try">
+                <button id="aftertest">Click Me!</button>
+                <p>Click this to add text after the paragraph below</p>
+                <br>
+                <p id="wheel">I will break the wheel</p> 
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Append---</h2>
+            <div class="try" id="death2">
+                <button id="appendtest">Click Me!</button>
+                <p>Click this to finish the paragraph below.</p>
+                <br>
+                <p>What do we say to the god of death?</p> 
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---HTML---</h2>
+            <div class="try">
+                <p id="HTMLtest">
+                    <button>Click Me!</button>
+                </p>
+                <p>HTML gets the HTML of an element. Click the button to the left to get change it to HTML</p>
+
+            </div>
+        </div>
+
+
+        <div class="example">
+            <h2>---Attr---</h2>
+            <div class="try">
+                <p> The attr value allows gets the attribute value of the first element within a set.</p>
+                <br>
+                <label>
+                    Click Me <input id="checktime" type="checkbox" checked = "checked">
+                </label>
+                <br>
+                <p id="checkstatus">Attr:</p>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>---Val---</h2>
+            <div class="try">
+                <p> The attr value allows gets the attribute value of the first element within a set.</p>
+                <br>
+                <br>
+                <label for="valtest">Select Option</label>
+                <select id="valtest">
+                    <option value="1">Value 1</option>
+                    <option value="2">Value 2</option>
+                    <option value="3">Value 3</option>
+                </select>
+                
+                <br>
+                <p id="checkstatus2">Value: </p>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

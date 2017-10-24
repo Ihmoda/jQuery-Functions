@@ -1,0 +1,116 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    height: auto;
+    width: 970px;
+    background: #0E494E;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    background: #804715;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #0E494E;
+    padding-top: 10px;
+    background: lightgrey;
+    text-align: center;
+}
+
+.example {
+    width: 970px;
+    height: 300px;
+    background: #68979B;
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.examplefirst {
+    height: 150px;
+}
+
+.try {
+    width: 970px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.example img{
+    height: 150px;
+    margin: 10px auto;
+}
+
+.try p {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-top: 10px;
+}
+
+.try button{
+    width: 80px;
+    height: 40px;
+    background: white;
+    display: inline-block;
+    box-shadow: 3px 3px 3px;
+    margin: 0px 10px;
+}
+
+#mountain{
+    display: none;
+}
+
+#tyrion {
+    display: none;
+}
+
+example {
+    display: none;
+}
+
+#Arya {
+    display: none;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#slidetogglepic{
+    display: none;
+}
+
+#fadeinpic {
+    display: none;
+}
+
+.blue {
+    background: blue;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+}
+
+label {
+    color: white;
+}
+
+
